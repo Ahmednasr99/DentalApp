@@ -1,5 +1,6 @@
 class PatientsController < ApplicationController
 
+
     def index
         render json: Patient.all
     end
@@ -36,11 +37,5 @@ class PatientsController < ApplicationController
 
         params.permit(:name, :age, :diagnose, :last_visit)
     end
-
-
-
-
-
-
 
 end
